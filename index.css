@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.067);
+    /* border: 2px solid black; */
+}
+
+.details {
+    background-color: rgba(31, 199, 143, 0.353);
+    margin: 20px;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.details p {
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.para {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 10px 200px;
+    padding: 10px;
+    border-radius: 7px;
+    color: rgb(125, 74, 8);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.sep {
+    width: 60%;
+    height: 10px;
+    margin-top: 20px;
+    border-bottom: 5px dashed rgba(31, 199, 143, 0.353);
+}
+
+.team {
+    margin: 20px;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.leadership {
+    cursor: pointer;
+    background-color: rgba(31, 199, 143, 0.353);
+    padding: 10px;
+    margin: 20px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.image {
+    width: 220px;
+    aspect-ratio: 1;
+    margin: 10px;
+    border-radius: 50%;
+    transition: 0.4s ease;
+}
+
+.image:hover {
+    transform: scale(1.1);
+}
+
+.images {
+    margin: 0 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.nameandimg {
+    margin: 10px;
+    text-align: center;
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .image {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .para {
+        margin: 10px 20px;
+    }
+}
